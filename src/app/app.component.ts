@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { ContactsService } from './services/contacts.service'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
-import { ToastrService } from 'ngx-toastr/public_api'
+import { ToastrService } from 'ngx-toastr'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -35,6 +35,7 @@ export class AppComponent {
       })
       .subscribe({
         next: () => {
+          this.toastrService.success('Mensagem enviada', 'Sucesso')
           this.formulario.setValue({
             name: '',
             email: '',
@@ -42,7 +43,7 @@ export class AppComponent {
             message: '',
           })
         },
-        error: (e) => (this.messageError = e),
+        error: (e) => this.toastrService.error('Mensagem não enviada', 'Erro'),
       })
   }
 }

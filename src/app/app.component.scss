@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
 @import 'ngx-toastr/toastr';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
 .menu {
   height: 100%;
   width: 160px;
@@ -92,7 +92,7 @@
     position: relative;
     z-index: 10;
     margin: 0;
-    font-family: 'Montserrat';
+   
     font-size: 68px;
     color: #fff;
     span {
@@ -106,7 +106,7 @@
     width: 20%;
     height: 60px;
     background-color: rgba(#38b6ff, 0.1);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
@@ -141,7 +141,7 @@
 
   h1 {
     margin: 0;
-    font-family: 'Montserrat';
+
     font-size: 54px;
     font-weight: bold;
     color: #fff;
@@ -264,7 +264,7 @@
 
   h1 {
     margin: 0;
-    font-family: 'Montserrat';
+
     font-size: 54px;
     font-weight: bold;
     color: #fff;
@@ -346,7 +346,7 @@
 
   h1 {
     margin: 0;
-    font-family: 'Montserrat';
+
     font-size: 54px;
     font-weight: bold;
     color: #fff;
